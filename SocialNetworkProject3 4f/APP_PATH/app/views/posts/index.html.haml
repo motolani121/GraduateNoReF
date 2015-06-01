@@ -1,0 +1,26 @@
+%h1 Listing postslkiigykiuk
+
+%table
+  %tr
+    %th Title
+    %th Content
+    %th Image url
+    %th email
+    %th
+    %th
+
+
+  - @posts.each do |post|
+    %tr
+      %td= post.title
+      %td= post.content
+      %td= image_tag(post.image_url)
+      %td= post.email
+      %td= link_to 'Show', post
+      %td= link_to 'Edit', edit_post_path(post)
+      %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Post', new_post_path
+<%= image_tag(product.image_url, class: 'list_image') %>

@@ -1,0 +1,12 @@
+
+Reply:
+<%= form_tag({controller: "conversations", action: "create"}, method: :post) do %>
+    email
+    <%= text_field_tag :email %>
+    <%= label_tag :subject %>
+    <%= text_field_tag :subject %>
+    <%= label :body, "Message text" %>
+    <%= text_area_tag :body %>
+    <%= submit_tag 'Send message', class: "btn btn-primary" %>
+    <%= submit_tag 'Clear Reply Box', type: :reset, class: 'btn btn-danger' %>
+<% end %>

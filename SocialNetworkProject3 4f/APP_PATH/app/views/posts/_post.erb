@@ -1,0 +1,11 @@
+<div>
+  <h2><%= link_to post.title, :action => 'show', :id => post %></h2>
+  <p><%= post.content %></p>
+  <p><%= post.image_url %></p>
+  <p><%= post.email %></p>
+  <p><%= post.email %></p>
+
+  <p><small>
+    <%= post.created_at.to_s %>
+  </small></p>
+</div>

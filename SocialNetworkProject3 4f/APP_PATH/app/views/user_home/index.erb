@@ -1,0 +1,14 @@
+<h1>WELCOME TO MINI-FACE</h1>
+
+
+
+
+<li><a <%= link_to "Message", new_message_path, class: "btn btn-large btn-primary" %></a></li>
+
+<li><a <%= link_to 'all user', user_home_path(:user_id) %></a></li>
+
+<li><a <%= link_to "friends", friendship_path(current_user.id) %></a></li>
+
+
+<li><a <%= link_to 'post', posts_path(current_user.id) %></a></li>
+

@@ -1,0 +1,8 @@
+%h1 Conversation
+%h2 Inbox
+%ul= render collection: mailbox.inbox, partial: 'conversation'
+%h2 Sentbox
+%ul= render collection: mailbox.sentbox, partial: 'conversation'
+%h2 Trash
+%ul= render collection: mailbox.trash, partial: 'conversation'
+

@@ -1,0 +1,13 @@
+
+<div id="user">
+  <% for user in @users %>
+      <div class="=user">
+        <p>
+          <%= user.email %>
+          <%= button_to "Add to network", friendship_index_path(current_user, :friend_id => user), :method => 'post' %>
+        <div class="clear"></div>
+        </p>
+      </div>
+
+      </div>
+  <%end%>
